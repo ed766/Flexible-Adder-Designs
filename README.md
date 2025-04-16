@@ -12,7 +12,7 @@ It contains fully‑parameterised RTL and self‑checking test‑benches for fiv
 | `brent_kung_adder/` | `brent_kung_adder_full.sv`<br>`tb_brent_kung_adder_full.sv` |
 | `hybrid_adder/` | `hybrid_brent_kung_cla.sv`<br>`tb_hybrid_brent_kung_cla.sv` |
 | root | Paper PDF + this `README.md` |
-
+| root |  `dc.tcl` |
 Each test‑bench generates random vectors, compares against a software “golden” model, and prints **PASS/FAIL**; no external stimulus files are required.
 
 ---
@@ -51,7 +51,7 @@ All results were obtained with **Synopsys Design Compiler** using a 45 nm typic
 dc_shell -f scripts/synth_rca.tcl
 ```
 
-The DC script elaborates the design for 32/64/128 bits, constrain max‐fan‑out/transition, then emit area, timing and power reports 
+The DC script provided elaborates the design for 32/64/128 bits for the ripple carry adder, constrain max‐fan‑out/transition, then emit area, timing and power reports
 
 ---
 
