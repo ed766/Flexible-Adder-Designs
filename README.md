@@ -51,7 +51,7 @@ All results were obtained with **Synopsys Design Compiler** using a 45 nm typic
 dc_shell -f scripts/synth_rca.tcl
 ```
 
-The DC scripts inside each folder elaborate the design for 32/64/128 bits, constrain max‐fan‑out/transition, then emit area, timing and power reports under `reports/`.
+The DC script elaborates the design for 32/64/128 bits, constrain max‐fan‑out/transition, then emit area, timing and power reports 
 
 ---
 
